@@ -1,0 +1,15 @@
+APIClient - request data from Flickr server. I used one urlRequest that contains the image url and with it its square format (using the extras=url_q parameter to pull the square image), instead of two url requests that you mentioned in the email (as I figured it was easier if Flickr already provides what I needed in one request). 
+	Alamofire and AlamofireImage were the dependencies for above tasks. 
+Deck - abstracts the data model. It consists of a photo Array and image Array for easier access 	when working with UI elements. It has a shuffle function which takes an array of UIImages and returns and rearranges the order. 
+
+MainViewController- contains UICollectionView delegate/datastore, simple flowLayout for 4x4 grid, populateData from APIClient, and some helper methods to check matched cell images. 
+
+TO FIX
+It would be nice to set up a global variable for the number of grid cells, which can be applied to both set up the visual grid and URL request parameters (etc, perPage = “8”).
+
+When first tapping an image cell, its matching cell won't be marked–but the rest of the cells perform fine. I believe it has to do with how I check the math in “did select cell” delegate method.
+
+After winning, actionAlert reload data is not restarting the game. If I have more time, I will look into it. It might be because of how I organize the functions. 
+
+——
+This is what I have for now, I would love to continue to fix the above issues and polish it up when I have more free time next week. 

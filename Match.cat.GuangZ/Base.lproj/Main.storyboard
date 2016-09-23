@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Match_cat_GuangZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wQQ-tf-GTI">
+                                <rect key="frame" x="0.0" y="142" width="600" height="328"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="lXH-f2-MQ5">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="eS9-1A-u3u" customClass="CatCollectionViewCell" customModule="Match_cat_GuangZ" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C0a-Jm-fVa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐱" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLL-DE-9ew">
+                                                    <rect key="frame" x="3" y="3" width="144" height="144"/>
+                                                    <color key="backgroundColor" red="1" green="0.99400529449999997" blue="0.45113310880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="C0a-Jm-fVa" firstAttribute="leading" secondItem="eS9-1A-u3u" secondAttribute="leading" id="3RX-PQ-jBx"/>
+                                            <constraint firstItem="QLL-DE-9ew" firstAttribute="leading" secondItem="eS9-1A-u3u" secondAttribute="leading" constant="3" id="8Fe-rO-nCE"/>
+                                            <constraint firstAttribute="bottom" secondItem="QLL-DE-9ew" secondAttribute="bottom" constant="3" id="8cM-NC-bf9"/>
+                                            <constraint firstItem="C0a-Jm-fVa" firstAttribute="trailing" secondItem="eS9-1A-u3u" secondAttribute="trailing" id="Brv-8g-Xuv"/>
+                                            <constraint firstItem="QLL-DE-9ew" firstAttribute="top" secondItem="eS9-1A-u3u" secondAttribute="topMargin" id="Eq2-Kb-EnB"/>
+                                            <constraint firstItem="QLL-DE-9ew" firstAttribute="bottom" secondItem="eS9-1A-u3u" secondAttribute="bottomMargin" id="JXd-9d-t0H"/>
+                                            <constraint firstItem="QLL-DE-9ew" firstAttribute="leading" secondItem="eS9-1A-u3u" secondAttribute="leadingMargin" id="Xfo-sg-ntL"/>
+                                            <constraint firstItem="QLL-DE-9ew" firstAttribute="top" secondItem="eS9-1A-u3u" secondAttribute="top" constant="3" id="XqV-YI-KRb"/>
+                                            <constraint firstAttribute="trailing" secondItem="QLL-DE-9ew" secondAttribute="trailing" constant="3" id="iKq-d2-kv2"/>
+                                            <constraint firstItem="C0a-Jm-fVa" firstAttribute="bottom" secondItem="eS9-1A-u3u" secondAttribute="bottom" id="idL-fa-K02"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="QLL-DE-9ew" secondAttribute="trailing" id="krW-2H-TLP"/>
+                                            <constraint firstItem="C0a-Jm-fVa" firstAttribute="top" secondItem="eS9-1A-u3u" secondAttribute="top" id="ttK-uV-6mf"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Eq2-Kb-EnB"/>
+                                                <exclude reference="JXd-9d-t0H"/>
+                                                <exclude reference="Xfo-sg-ntL"/>
+                                                <exclude reference="krW-2H-TLP"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="cellImageView" destination="C0a-Jm-fVa" id="gHj-uo-s9I"/>
+                                            <outlet property="cellLabel" destination="QLL-DE-9ew" id="UIW-Ot-Axj"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐾🐾🐱" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buP-hf-Zv2">
+                                <rect key="frame" x="178" y="470" width="245" height="130"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wQQ-tf-GTI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8cj-E8-eKc"/>
+                            <constraint firstItem="buP-hf-Zv2" firstAttribute="top" secondItem="wQQ-tf-GTI" secondAttribute="bottom" id="Gw4-sO-aAX"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="buP-hf-Zv2" secondAttribute="bottom" id="HQv-By-yVI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wQQ-tf-GTI" secondAttribute="bottom" constant="130" id="N7I-7h-q3B"/>
+                            <constraint firstItem="wQQ-tf-GTI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="122" id="RYA-hm-1Tv"/>
+                            <constraint firstAttribute="trailing" secondItem="wQQ-tf-GTI" secondAttribute="trailing" id="XUO-32-FEI"/>
+                            <constraint firstItem="buP-hf-Zv2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="158" id="Xvq-J9-92a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="buP-hf-Zv2" secondAttribute="trailing" constant="157" id="tHn-yp-2RD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="wQQ-tf-GTI" id="u0L-rh-pGZ"/>
+                        <outlet property="scoreLabel" destination="buP-hf-Zv2" id="3xl-fe-Pu0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="364"/>
+        </scene>
+    </scenes>
+</document>
